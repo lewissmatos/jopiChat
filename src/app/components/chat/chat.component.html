@@ -1,0 +1,54 @@
+<h1>Chat</h1>
+<hr>
+
+<div class="app-mensajes " id="app-mensajes">
+    
+    <div class="text-end">
+        <span class="badge bg-acent-primary">Lewis</span>
+        <p>Este es un mensaje</p>
+    </div>
+
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+    <div>
+        <span class="badge bg-acent-secondary">Eiron</span>
+        <p>Este tambien es un mensaje</p>
+    </div>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" 
+  placeholder="Escriba un mensaje"
+  [(ngModel)]="message"
+  >
+
+  <button class="btn btn-acent-primary" type="button" 
+  (click)="enviarMensaje()"
+  ><i class="fa fa-paper-plane"></i></button>
+</div>
