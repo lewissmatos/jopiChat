@@ -8,8 +8,6 @@ import { map } from 'rxjs/operators'
   providedIn: 'root'
 })
 export class ChatService {
-
-  
   
   private itemsCollection!: AngularFirestoreCollection<MessageInt>;
 
