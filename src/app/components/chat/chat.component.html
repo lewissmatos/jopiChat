@@ -1,46 +1,16 @@
-<h1>Chat <i class="fa fa-comment color-acent-own" style="width: 100px;"></i>
-</h1>
+<h3>Chat <i class="fa fa-comment color-acent-own" style="width: 100px;"></i>
+</h3>
 <hr>
 
 <div class="app-mensajes " id="app-mensajes">
     
-    <div class="text-end">
+    <div class="text-end" *ngFor="let chat of cS.chats" >
         <span class="badge bg-acent-primary">Lewis</span>
-        <p>Este es un mensaje</p>
+        <p class="messages-border mt-2">{{chat.message}}</p>
     </div>
 
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
-    <div>
-        <span class="badge bg-acent-secondary">Eiron</span>
-        <p>Este tambien es un mensaje</p>
-    </div>
+    
+    
 </div>
 
 <div class="input-group mt-2" >
