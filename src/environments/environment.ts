@@ -5,6 +5,7 @@ export const environment = {
   firebase: {
     apiKey: "AIzaSyCZJB0mpEKhPmhEECKoe-OzqfZUw7G14Ho",
     authDomain: "jopichat-ad118.firebaseapp.com",
+    databaseURL: "https://jopichat-ad118-default-rtdb.firebaseio.com",
     projectId: "jopichat-ad118",
     storageBucket: "jopichat-ad118.appspot.com",
     messagingSenderId: "845848930322",
