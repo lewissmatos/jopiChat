@@ -9,7 +9,8 @@ import { map } from 'rxjs/operators'
 })
 export class ChatService {
 
-
+  
+  
   private itemsCollection!: AngularFirestoreCollection<MessageInt>;
 
   public chats: MessageInt[] = []
