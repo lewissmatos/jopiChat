@@ -1,1 +1,30 @@
-<p>login works!</p>
+
+<h3>Login <i class="fas fa-sign-in-alt color-acent-own" style="width: 100px;"></i>
+</h3>
+
+
+
+<div class="form-group mt-3 text-center">
+
+    <p>Iniciar sesión con: </p>
+
+    <div class="container mt-3">
+
+        <button class="btn btn-primary m-2"
+            (click)="logIn('Google')"
+        >
+            <i class="fab fa-google"></i>
+            <span class="m-1" style="color: white; margin-right: 2px;">Google</span> 
+        </button>
+        
+        <button class="btn btn-info m-2"
+            (click)="logIn('Twitter')"
+
+        >
+            <i class="fab fa-twitter" style="color: white; margin-right: 2px;"></i>
+            <span class="m-1" style="color: white;">Twitter</span> 
+        </button>
+
+    </div>    
+
+</div>    

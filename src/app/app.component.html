@@ -1,9 +1,38 @@
 
 <div class="container main-container ">
 
-  <h1>JopiChat</h1>
+  <div class="row">
+
+
+    <div class="col-10">
+      <h1>JopiChat</h1>
+
+    </div>
+
+    <div class="col-2 text-end" *ngIf="cS.user.uid">
+
+      <button class="btn btn-outline-danger"
+      (click)="cS.logout()"
+      >
+      <i class="fas fa-sign-out-alt"></i>
+      Salir
+      </button>
+
+    </div>
+
+  </div>
+
   
-  <div class="mt-4 chat-window" style="padding-bottom: 410px;">
+  <hr>
+
+
+  <app-login  *ngIf="!cS.user.uid"></app-login>
+  
+
+
+  <div class="mt-4 chat-window" style="padding-bottom: 410px;"
+   *ngIf="cS.user.uid"
+  >
     
     <app-chat></app-chat>
 

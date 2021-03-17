@@ -24,13 +24,14 @@ export class ChatComponent implements OnInit {
   }
 
   constructor(public cS: ChatService) {
-    
+
     this.cS.loadMessages()
       .subscribe()
 
   }
 
   ngOnInit(): void {
+
   }
 
 }

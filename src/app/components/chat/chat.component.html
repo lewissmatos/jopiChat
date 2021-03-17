@@ -4,12 +4,19 @@
 
 <div class="app-mensajes " id="app-mensajes">
     
-    <div class="text-end" *ngFor="let chat of cS.chats" >
-        <span class="badge bg-acent-primary">Lewis</span>
-        <p class="messages-border mt-2">{{chat.message}}</p>
+    <div class="" *ngFor="let chat of cS.chats" 
+    [ngClass]="{'text-end': cS.user.uid == chat.uid}"
+    >
+        <span class="badge bg-acent-primary"
+        [ngClass]="{'bg-acent-primary': cS.user.uid == chat.uid, 
+        'bg-acent-secondary': cS.user.uid != chat.uid}"
+
+        >{{chat.name}}</span>
+          <p class="mt-2 mx-2"          
+          >      
+          {{chat.message}}</p>
     </div>
 
-    
     
 </div>
 
@@ -17,6 +24,7 @@
   <input type="text" class="form-control" 
   placeholder="Escriba un mensaje"
   [(ngModel)]="message"
+  (keyup.enter)="enviarMensaje()"
   >
 
   <button class="btn btn-acent-primary" type="button" 
